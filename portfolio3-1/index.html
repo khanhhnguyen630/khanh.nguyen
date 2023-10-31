@@ -8,6 +8,8 @@
   <title>Khanh Nguyen Portfolio</title>
   <script src="https://kit.fontawesome.com/2da5fc0214.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" type="text/css">
+  <!-- Include Typed.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
   
 <body>
@@ -24,17 +26,22 @@
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#project">Project</a></li>
+          <!-- <li><a href="#project">Project</a></li> -->
           <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
-    <!--  ------------ MAIN ---------------  -->
+    </header>    
+    <!--  ------------ BREAK ---------------  -->
     <main>
       <section class='section' id="intro">
-        <p>Khanh Nguyen</p>
-        <p id=".auto-typed">I am </p>
+        <div class="smallbox">
+          <p>Khanh Nguyen</p>
+          <p>I am 
+            <span class="auto-type"></span>
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1IfHWpjl__w?controls=0&autoplay=1&loop=1&playlist=1IfHWpjl__w" title="YouTube video player" frameborder="0" controls="0" autoplay="1" loop="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
       </section>
       <section class="section" id="home">
         <div class="box">
@@ -115,7 +122,10 @@
         <div id='contactbox'>
           <h1>Contact me</h1>
           <div id='innerform'>
-            <form action="https://formspree.io/f/xbjvwrlz" method="POST">
+            <form
+              action="https://formspree.io/f/xbjvwrlz"
+              method="POST"
+            >
               <p><small>(All the * fields are required)</small></p>
               <div class="form-container">
                 <label for="name">Full Name (*):</label>
@@ -132,9 +142,6 @@
               <div class=form-container">
                 <label for="message">Message/Comment (*):</label><br>
                 <textarea cols="20" rows="5" required></textarea>
-              </div>
-              <div class="form-container">
-                <input type="checkbox" name="check" value="check" required>I have read and understand privacy and TOS (*)
               </div>
               <div class="button-container">
                 <input type="submit" value="Submit">
